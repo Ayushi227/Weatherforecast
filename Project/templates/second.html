@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<title>Predicted Weather</title>
+<body>
+<style>
+    body
+    {
+        background-image:url("static/cover1.jfif")
+    }
+</style>
+<center>
+   <form input type="text" value="PREDICTED WEATHER" />
+       <H1>  <b> {% for k, v in temp.items() %}
+                <p>{{ k }}--->{{ v }}</p>
+         {% endfor %}
+    </b></H1>
+     </form>
+</center>
+<p> <b>The Explained Variance:{{a}}</b></p>
+<p> <b>The Mean Absolute Error:{{b}}</b></p>
+<p> <b>The Median Absolute Error:{{c}}</b></p>
+
+    </body>
+</html>
